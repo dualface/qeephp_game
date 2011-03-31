@@ -12,7 +12,7 @@ abstract class Config
      *
      * @var array
      */
-    private static $_config = array();
+    public static $_config = array();
 
     /**
      * 导入设置

@@ -293,9 +293,9 @@ class App
         $action_name = strtolower($action_name);
         if (strpos($action_name, '.') !== false)
         {
-            $action_name = preg_replace('/\.+/', '.', $action_name);
+            $action_name = preg_replace('/\/+/', '/', $action_name);
         }
         $action_name = trim($action_name, ". \t\r\n\0\x0B");
-        return preg_replace('/[^a-z\.]/', '', $action_name);
+        return preg_replace('/[^a-z\/]/', '', $action_name);
     }
 }

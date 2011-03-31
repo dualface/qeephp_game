@@ -1,8 +1,8 @@
 <?php
 
-namespace qeephp\mvc;
+namespace qeeplay\mvc;
 
-use qeephp\Error;
+use qeeplay\Error;
 
 /**
  * 与 MVC 有关的异常

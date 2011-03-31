@@ -91,7 +91,7 @@ abstract class Autoload
     }
 }
 
-spl_autoload_register(array('\\qeephp\\Autoload', '_autoload'));
+spl_autoload_register(array('\\qeeplay\\Autoload', '_autoload'));
 if (!\QPLAY_DEBUG)
 {
     Autoload::import_maps((array)apc_fetch('qeeplay.autoload.maps'));

@@ -1,7 +1,5 @@
 <?php
 
-require_once __DIR__ . '/Autoload.php';
-
 /**
  * DIRECTORY_SEPARATOR 的简写
  */
@@ -317,3 +315,5 @@ function dump($vars, $label = null, $depth = null, $return = false)
     \qeeplay\debug\Debug::dump($vars, $label, $depth);
     if ($return) return ob_get_clean();
 }
+
+require_once __DIR__ . '/Autoload.php';
